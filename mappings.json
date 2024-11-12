@@ -1,0 +1,110 @@
+[{
+    "context":"Generate a Pitch deck for a Retail company, The generated pitch should include key points such as GenAI for Retail Industry, incorporating Google Cloud Anthos for Retail and also Application Modernization solutions for Retail.",
+    "industry":"Retail",
+    "solution":"Artificial Intellegence",
+    "customer_name":"Seven Eleven Taiwan",
+    "outlines":[
+        "The retail industry is undergoing a significant transformation, driven by the rise of e-commerce, changing customer expectations, and the need for greater efficiency.",
+        "Google Cloud offers a comprehensive suite of solutions that can help retailers address these challenges and achieve their business goals.",
+        "GenAI for Retail Industry",
+        "Google Cloud for Anthos for retail",
+        "Application Modernization solutions for Retail",
+        "With Google Cloud, retailers can stay ahead of the competition and thrive in the digital age.",
+        "Google Cloud's solutions are designed to help retailers improve the customer experience, streamline internal processes, and make data-driven decisions.",
+        "GenAI is a new generation of artificial intelligence (AI) that can help retailers generate creative content, personalize the customer experience, and improve operational efficiency.",
+        "Application Modernization solutions for Retail",
+        "These solutions can help retailers improve the performance, scalability, and security of their applications.",
+        "Customer Success Stories",
+        "Google Cloud has helped many retailers achieve success, including Macy's, Walmart, and Target.",
+        "Next Steps"
+    ],
+    "deck_url":"https://docs.google.com/presentation/d/e/2PACX-1vS1SgA8Y8GpM5RAYvEzAThcsmsQpGvLsc4wk52mx7MvkFfDtrvfCqIraZglPt5zZ8bXSDC-J39bQOxk/embed?start=false&loop=false&delayms=3000"
+},
+{
+    "context":"Generate a Pitch deck for a HealthCare company,The deck should be concentrating on how a healthcare provider or hospital can utilize google in AI and their key benefits. Challenges faced by Healthcare & LifeSciences industry and how Google in AI can help overcome these challanges. please provide some specific use cases or customer success stories if avaliable.",
+    "industry":"Healthcare and Life Sciences",
+    "solution":"Artificial Intellegence",
+    "customer_name":"Salinas Health",
+    "outlines":[
+        "The healthcare industry is facing a number of challenges, including rising costs, an aging population, and a shortage of qualified healthcare professionals.",
+        "AI has the potential to address these challenges and improve the quality of care for patients.",
+        "Google is a leader in AI, and we are committed to using our technology to improve healthcare.",
+        "We have a number of AI solutions that can be used by healthcare providers, including:",
+        "AI-powered image analysis can be used to detect diseases earlier and more accurately.",
+        "AI-powered chatbots can be used to provide patients with information and support.",
+        "AI-powered virtual assistants can be used to help healthcare providers with administrative tasks.",
+        "We believe that AI has the potential to revolutionize healthcare and improve the lives of millions of people.",
+        "Here are some specific examples of how Google AI is being used in healthcare:",
+        "We are confident that Google AI will play a major role in the future of healthcare.",
+        "We are committed to working with healthcare providers to develop new AI-powered solutions that will improve the quality of care for patients."
+    ],
+    "deck_url": "https://docs.google.com/presentation/d/e/2PACX-1vQ7jo5vrZCzhbzxXrXnpPsTtLTk8XMo00HKXDIuNjd6pOY4x9iyj17CrIgMFCK6yzWmiTCuxP8Zm5JW/embed?start=false&loop=false&delayms=3000"   
+},
+{
+    "context":"Build a deck for a Financial Services Company, The presentation Should include introduction to Google's operations, an overview of AI transformations, with specific examples and it should also include Google's operations that shows how Google handles operations, risk assessment, and decision-making, particularly regarding technology and AI.",
+    "industry":"Financial Services",
+    "solution":"Data Analytics, Artificial intelligence",
+    "customer_name":"HSBC",
+    "outlines":[
+        "Introduction to Google Cloud",
+        "Overview of AI transformations",
+        "Google's operations, risk assessment, and decision-making",
+        "How Google Cloud can help HSBC achieve its business goals",
+        "Case studies of successful AI implementations in financial services",
+        "Next steps for HSBC and Google Cloud"
+    ],
+    "deck_url": "https://docs.google.com/presentation/d/e/2PACX-1vRDJqT7HrIOlw-r-qNhVqUrsrdaKRwEjp5aYm6UJuR7ZgaC6Uo1ZhQmvZi7OfhAMHb0KLx6c6Fu7AV4/embed?start=false&loop=false&delayms=3000"   
+},
+{
+    "context":"I need to build a pitch for a e-commerce company (electronic products, tv, mobile and rent houses and apartments partners). \nThe pitch must have 5 sections:\n1 - Introduction to their industry’s challenges and, if possible, how Google is already helping the industry.\n2 - A Why Google narrative, focusing on Google having skin on the game with them and its market leadership in marketing analytics.\n3 - Solutions, highlighting our cutting-edge AI solutions: These advanced capabilities differentiate us and offer unique value to Rover, the objective is also to justify marketing spending and drive revenue acquiring new customers and reducing churn.\n4 - Customer success cases (at least 4 of them).\n5 - Next steps.",
+    "industry":"Retail",
+    "solution":"Data Analytics, Artificial intelligence",
+    "customer_name":"OLX",
+    "outlines":[
+        "The e-commerce industry is booming, but it also faces challenges such as intense competition, rising customer expectations, and the need to manage complex supply chains.",
+        "Google is already helping the e-commerce industry by providing a range of solutions that can help businesses reach new customers, personalize experiences, and bring products to market faster.",
+        "Google Cloud is the market leader in marketing analytics, with a comprehensive suite of tools that can help businesses track their marketing performance, measure ROI, and optimize their campaigns.",
+        "Google Cloud's AI solutions can help e-commerce businesses improve their customer experience, personalize their marketing, and optimize their operations.",
+        "Google Cloud has a proven track record of helping e-commerce businesses succeed. Some of our customer success stories include:",
+        "Next steps: We would like to schedule a follow-up meeting to discuss your specific needs and how Google Cloud can help you achieve your business goals."
+    ],
+    "deck_url":"https://docs.google.com/presentation/d/e/2PACX-1vRYzEfD1sMtWYOrtgaX6luXYpeSL_5yd1YdEbCu5uzybdK8QS9ua_4LS5bc_XWCpi8Q-kQ4AC_U_VFI/embed?start=false&loop=false&delayms=3000"    
+},
+{
+    "context":"Generate a Pitch deck for a Cigna HealthCare company. The deck should be concentrating on how a healthcare provider can utilize google in AI and their key benefits. ",
+    "industry":"Healthcare and Life Sciences",
+    "solution":"Artificial Intellegence",
+    "customer_name":"CIgna Health",
+    "outlines":[
+        "The healthcare industry is undergoing a digital transformation, driven by the need to improve patient care, reduce costs, and increase efficiency.",
+        "Artificial intelligence (AI) is playing a key role in this transformation, enabling healthcare providers to make better decisions, improve patient outcomes, and reduce costs.",
+        "Google Cloud offers a comprehensive suite of AI solutions for healthcare, including data analytics, machine learning, and natural language processing.",
+        "These solutions can help healthcare providers to:    * Improve patient care by providing personalized treatment plans and early detection of diseases.    * Reduce costs by automating administrative tasks and improving operational efficiency.    * Increase efficiency by streamlining workflows and improving data access.",
+        "Google Cloud is committed to helping healthcare providers transform their businesses with AI. We offer a variety of resources, including case studies, white papers, and webinars, to help you get started.",
+        "We also have a team of experts who can help you implement AI solutions that meet your specific needs.",
+        "Contact us today to learn more about how Google Cloud can help you transform your healthcare business with AI."
+    ],
+    "deck_url":"https://docs.google.com/presentation/d/e/2PACX-1vRV5fjLf2t2uOd-tGWwC-qc2MHKoJJ6UB0cHlpq5_Bsk7WUt9m4yy4h7k8A3VyfBskubk8ROPfyeLEW/embed?start=false&loop=false&delayms=3000"   
+},
+{
+    "context":"Generate a concise presentation on financial industry benefited by using Google BigQuery and some examples of companies benefited",
+    "industry":"Financial Services",
+    "solution":"Artificial intelligence",
+    "customer_name":"HDFC Bank",
+    "outlines":[
+        "Financial services companies face a complex and evolving landscape",
+        "Data is the lifeblood of the financial services industry",
+        "Google BigQuery is a powerful, scalable, and cost-effective data analytics platform",
+        "BigQuery can help financial services companies make better decisions",
+        "BigQuery can help financial services companies gain insights from their data",
+        "BigQuery can help financial services companies improve their customer experience",
+        "BigQuery can help financial services companies reduce their costs",
+        "BigQuery can help financial services companies comply with regulations",
+        "BigQuery is trusted by leading financial services companies around the world",
+        "Examples of companies benefited",
+        "How Google BigQuery can help your financial services company",
+        "Get started with Google BigQuery today"
+    ],
+    "deck_url":""   
+}
+]
