@@ -26,24 +26,59 @@ def home_page():
             label="**What is the context of your pitch?**",
             placeholder="Eg. Build a \"why google cloud\" pitch for a US-based ecommerce company. Include GenAI solutions, as well as slide on sustainablity.",
         )
-        ind, sol, cust = st.columns(3)
+        st.markdown(
+            """
+            <p>Enter a prompt above to create your presentation. Add details below to further customize the content of your asset. <a href="">Learn more</a></p>
+            """,
+            unsafe_allow_html = True
+        )
+        ind, sol, cust, dum = st.columns(4)
         with ind:
             st.session_state.industry = st.selectbox(
-                "**Industry**",
+                "*Industry*",
                 options=["Retail", "Healthcare and Life Sciences", "Financial Services"],
                 index=None,
                 placeholder="select",
             )
         with sol:
             st.session_state.solution = st.multiselect(
-                "**Solution**",
+                "*Solution*",
                 options=["Artificial Intelligence", "Data Analytics",],
                 # index=None,
                 placeholder="select",
             )
             
         with cust:
-            st.session_state.customer_name = st.text_input('**Customer Name**')
+            st.session_state.customer_name = st.text_input('*Customer Name*')
+        # dum1, dum2, dum3, er = st.columns(4, vertical_alignment="center")
+        with dum:
+            # st.text("")
+            # st.text("")
+            # st.text("")
+            st.session_state.er_num = st.text_input('*ER Number* *', placeholder="ER #")
+        reg, prod, aud, dum = st.columns(4)
+        with reg:
+            st.session_state.region = st.selectbox(
+                "*Region*",
+                options=["APAC", "EMEA", "LATAM", "NORTHAM", "JAPAN", "GLOBAL"],
+                index=None,
+                placeholder="select",
+            )
+        with prod:
+            st.session_state.product = st.multiselect(
+                "*Product*",
+                options=["AI Accelerators", "AI Accelerators & ML Frameworks", "AI Component - Natural Language", "AI Platform Training", "AI Platform Vision NAS", "Advisory Notifications", "Agent Assist", "AlloyDB", "Analytics Hub", "Anthos", "Anthos Config Management", "Anthos for Virtual Machines", "Anti-Money Laundering (AML)", "Apigee", "Apigee Platform", "App Engine", "AppSheet", "Artifact Registry", "Backup for GKE", "BeyondCorp Enterprise", "BigQuery", "BigQuery / Dremel", "BigQuery BI Engine", "BigQuery ML", "BigQuery Omni", "Blockchain Node Engine", "CCAI Insights", "CCAI Platform", "Certificate Authority Service", "Chrome Enterprise", "Chrome OS", "Chronicle SIEM", "Chronicle SOAR", "Chronicle Security Operations", "Cloud Access Policy (CAP) (Formerly IAM)", "Cloud Armor", "Cloud Backup & DR", "Cloud Bigtable", "Cloud Build", "Cloud CDN", "Cloud Composer", "Cloud DNS", "Cloud Data Catalog", "Cloud Data Fusion", "Cloud Data Loss Prevention (DLP) / Syft", "Cloud Data Transfer - Appliance", "Cloud Dataprep by Trifacta", "Cloud Dataflow", "Cloud Debugger", "Cloud Deploy", "Cloud Endpoints & API Gateway", "Cloud Firestore", "Cloud Functions", "Cloud Functions for Firebase", "Cloud Generative AI", "Cloud Graphics Processing Unit (GPU)", "Cloud HSM", "Cloud Identity-Aware Proxy", "Cloud Interconnect", "Cloud IoT Core", "Cloud KMS", "Cloud Load Balancing", "Cloud Logging", "Cloud Memorystore", "Cloud Monitoring", "Cloud NAT", "Cloud Marketplace", "Cloud Run", "Cloud SQL", "Cloud Scheduler", "Cloud Spanner", "Cloud Tasks", "Cloud Tensor Processing Unit (TPU)", "Cloud Trace", "Cloud VPN", "Cloud Workflows", "Connected Sheets", "Core Compute", "Cross Cloud Network", "Contact Center Insights", "Data Fusion", "Data Studio", "Database Migration Service", "Databases", "Dataplex", "Dataproc", "Datastream", "Dialogflow", "Document AI - Human in the Loop", "Document AI - Pretrained Models", "Document AI Warehouse", "Document AI Workbench (Custom Models)", "Document OCR", "Earth Engine", "Eventarc", "Filestore", "Firebase App Distribution", "Firebase Auth", "Firebase Machine Learning", "GCE - Autoscaler", "GCP Support", "Gemini for Google Cloud", "Gemini in Workspace", "Google Cloud Storage", "Google Distributed Cloud (GDC) in connected configuration", "Google Edge Cloud (GEC)", "Google Kubernetes Engine (GKE)", "Google Maps Platform", "Google Workspace", "Google Workspace Security", "Immersive Stream for XR", "Local SSD", "Looker", "ML Pipelines", "Mandiant", "Mandiant Consulting", "Mandiant Managed Defense", "Mandiant Threat Intelligence", "Media CDN", "Media Rendering APIs", "Natural Language API", "Networking", "Optimization AI", "Oracle on Bare Metal Servers", "Persistent Disk (PD)", "Pub/Sub", "Retail Recommendations AI", "Retail Search", "Secret Manager", "Security Analytics & Operations", "Security Command Center (SCC)", "Service Infrastructure", "Smart Factory Platform: Manufacturing", "Speech-to-Text API", "Storage Transfer Service", "TensorFlow Enterprise", "Transcode API", "Translation API", "VMware Engine", "Virtual Private Cloud (VPC)", "VPC Service Controls", "Vertex AI", "Vertex AI Agent Builder", "Video Intelligence API", "Vision API", "Visual Inspection AI", "Web Risk", "Web3", "reCAPTCHA Enterprise and Web Risk"],
+                # index=None,
+                placeholder="select",
+            )
+
+        with aud:
+            st.session_state.audience = st.multiselect(
+                "*Audience*",
+                options=["CDO", "CEO", "CFO", "CIO", "CMO", "CTO", "ITDM", "Line of Business", "Others"],
+                # index=None,
+                placeholder="select",
+            )
         _, __,___ = st.columns(3)
         with ___:
             if st.button('**Generate Outline**', use_container_width= True):
@@ -77,6 +112,10 @@ def main():
     st.session_state.industry = ''
     st.session_state.solution = ''
     st.session_state.customer_name = ''
+    st.session_state.region = ''
+    st.session_state.product = ''
+    st.session_state.audience = ''
+    st.session_state.er_num = ''
     st.session_state.deck_url = ''
     st.session_state.outlines = []
     # if 'context' not in st.session_state:
