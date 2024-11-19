@@ -48,12 +48,12 @@ with pitch.container(border=True):
     )
 
 with side_bar.popover("Edit my Presentation", use_container_width=True):
-    add_slide, transform_slide = st.tabs(["**Add Slide**", "**Transform Slide**"])
+    add_slide, transform_slide = st.tabs(["**Add Slide**", "**Transform Slide**"],)
     with add_slide:
-        slide_title = st.text_input("Slide Title", placeholder="Slide Title")
-        slide_content = st.text_area("Slide Content", placeholder="This slide provides an overview of the sustainable benefits of GCP")
+        slide_title = st.text_input("*Slide Title*", placeholder="Slide Title")
+        slide_content = st.text_area("*Slide Content*", placeholder="This slide provides an overview of the sustainable benefits of GCP")
         theme = st.selectbox(
-            label="Theme & Layout",
+            label="*Theme & Layout*",
             options=["Google Cloud Style 2024"],
             placeholder="Select Theme",
             index=None
@@ -79,9 +79,9 @@ with side_bar.popover("Edit my Presentation", use_container_width=True):
                 time.sleep(3)
             st.success("Success")
     with transform_slide:
-        criteria = st.text_area("Desired output criteria", placeholder="Optional details to reshuffle your slide (eg. provide more details, rewrite for specific audience, make it visual)")
+        criteria = st.text_area("*Desired output criteria*", placeholder="Optional details to reshuffle your slide (eg. provide more details, rewrite for specific audience, make it visual)")
         theme = st.selectbox(
-            label="Theme & Layout",
+            label="*Theme & Layout*",
             options=["Google Cloud Style 2024"],
             placeholder="Select Theme",
             index=None,

@@ -36,14 +36,35 @@ def home_page():
         with ind:
             st.session_state.industry = st.selectbox(
                 "*Industry*",
-                options=["Retail", "Healthcare and Life Sciences", "Financial Services"],
+                options=["Consumer Packaged Goods",
+ "Financial Services",
+ "Gaming",
+ "Healthcare & Life Sciences",
+ "Insurance",
+ "Manufacturing",
+ "Media & Entertainment",
+ "Public Sector - Non US",
+ "Retail",
+ "Software & Internet",
+ "Supply Chain, Logistics & Transportation",
+ "Telecommunications"]
+,
                 index=None,
                 placeholder="select",
             )
         with sol:
             st.session_state.solution = st.multiselect(
                 "*Solution*",
-                options=["Artificial Intelligence", "Data Analytics",],
+                options=["Applications",
+ "Artificial Intelligence",
+ "Data Analytics",
+ "Databases",
+ "Enterprise Applications & Cortex",
+ "Infrastructure",
+ "Productivity & Collaboration",
+ "Security",
+ "X-Enterprise"]
+,
                 # index=None,
                 placeholder="select",
             )

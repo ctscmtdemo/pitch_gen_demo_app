@@ -13,7 +13,7 @@ st.markdown("""
     unsafe_allow_html=True
 )
 
-with st.container(border=True, key="oc",height=650):
+with st.container(border=True, key="oc",height=500):
     # st.markdown("""
     #             <style>
     #             .st-key-oc {
@@ -41,7 +41,7 @@ with st.container(border=True, key="oc",height=650):
         st.text_area(
             label="**Context:**",
             value=st.session_state.context,
-            height=515
+            height=370
         )
         st.button(
             "**Recreate**",
@@ -50,14 +50,14 @@ with st.container(border=True, key="oc",height=650):
         )
     with line_col:
         st.markdown("""
-        <div style="width: 2px; height: 600px; background-color: grey; position: absolute; top: 0; left: 20%; transform: translateX(-50%);"></div>
+        <div style="width: 2px; height: 470px; background-color: grey; position: absolute; top: 0; left: 20%; transform: translateX(-50%);"></div>
         """, 
         unsafe_allow_html=True    
         )
     
     with outlines_col:
         st.write(f"**Refine any sections of the generated outlines [{len(st.session_state.outlines)}]**")
-        with st.container(border=False, height=500):
+        with st.container(border=False, height=370):
             for i, outline in enumerate(st.session_state.outlines):
                 container = st.container(border=True, key=f"{i}outline")
                 # st.markdown(
