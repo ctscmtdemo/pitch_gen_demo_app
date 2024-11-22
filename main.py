@@ -1,7 +1,11 @@
 import time
 import json
 import streamlit as st
+# from st_screen_stats import ScreenData, StreamlitNativeWidgetScreen, WindowQuerySize, WindowQueryHelper
 
+# screenD = ScreenData(setTimeout=1000)
+# screen_d = screenD.st_screen_data()
+# st.write(screen_d)
 
 def home_page():
     # st-emotion-cache-1wmy9hl
@@ -16,16 +20,15 @@ def home_page():
         st.markdown(
             """
             <div style="display: flex; align-items: center; justify-content: center;">
-            <img src="https://lh3.googleusercontent.com/Xtt-WZqHiV8OjACMMMr6wMdoMGE7bABi-HYujupzevufo1kiHUFQZukI1JILhjItrPNrDWLq6pfd=s600-w600" alt="Logo" style="height: 40px;">
-            <h3 style="margin-left: 0px;">Pitch Generator</h1>
+            <img src="https://lh3.googleusercontent.com/Xtt-WZqHiV8OjACMMMr6wMdoMGE7bABi-HYujupzevufo1kiHUFQZukI1JILhjItrPNrDWLq6pfd=s600-w600" alt="Logo" style="height: 70px;">
+            <h1 style="margin-left: 0px;">Pitch Generator</h1>
             </div>
             """, 
             unsafe_allow_html=True
         )        
         st.session_state.context = st.text_area(
             label="**What is the context of your pitch?**",
-            placeholder="Eg. Build a \"why google cloud\" pitch for a US-based ecommerce company. Include GenAI solutions, as well as slide on sustainablity.",
-            height=68
+            placeholder="Eg. Build a \"why google cloud\" pitch for a US-based ecommerce company. Include GenAI solutions, as well as slide on sustainablity."
         )
         st.markdown(
             """
@@ -106,9 +109,21 @@ def main():
     <style>
     .stApp {
         background: linear-gradient(to top, white 0%, #d9e1f0 13%, #d9e1f0 83%, white 90%);
+        font-size: 10;
     }
     </style>
     """, unsafe_allow_html=True)
+    st.markdown("""
+        <style>
+               .block-container {
+                    padding-top: 2rem;
+                    padding-bottom: 0rem;
+                    padding-left: 4rem;
+                    padding-right: 4rem;
+                }
+        </style>
+        """, unsafe_allow_html=True)
+
     st.session_state.context = ''
     st.session_state.industry = ''
     st.session_state.solution = ''

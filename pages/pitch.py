@@ -12,6 +12,16 @@ st.markdown("""
     """, 
     unsafe_allow_html=True
 )
+st.markdown("""
+        <style>
+               .block-container {
+                    padding-top: 2rem;
+                    padding-bottom: 0rem;
+                    padding-left: 4rem;
+                    padding-right: 4rem;
+                }
+        </style>
+        """, unsafe_allow_html=True)
 # components.iframe(
 #     "https://docs.google.com/presentation/d/e/2PACX-1vSBeu8eyMy7bvcN49Lkyia8aw9fXbJ6tMnPBN5Y2qHLrpOaHHZNQDL7YQmi6NutIIRTwRVZEfJZNpOS/embed?start=false&loop=false&delayms=3000",
 

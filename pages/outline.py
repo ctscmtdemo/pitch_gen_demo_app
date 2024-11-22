@@ -12,7 +12,16 @@ st.markdown("""
     """, 
     unsafe_allow_html=True
 )
-
+st.markdown("""
+        <style>
+               .block-container {
+                    padding-top: 2rem;
+                    padding-bottom: 0rem;
+                    padding-left: 4rem;
+                    padding-right: 4rem;
+                }
+        </style>
+        """, unsafe_allow_html=True)
 with st.container(border=True, key="oc",height=500):
     # st.markdown("""
     #             <style>
