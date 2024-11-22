@@ -5,7 +5,7 @@ import streamlit as st
 
 def home_page():
     # st-emotion-cache-1wmy9hl
-    with st.container(border=True, key="hc"):
+    with st.container(border=True, key="hc"):#, height=320):
         # st.markdown("""
         #     <style>
         #     .st-key-hc {
@@ -16,8 +16,8 @@ def home_page():
         st.markdown(
             """
             <div style="display: flex; align-items: center; justify-content: center;">
-            <img src="https://lh3.googleusercontent.com/Xtt-WZqHiV8OjACMMMr6wMdoMGE7bABi-HYujupzevufo1kiHUFQZukI1JILhjItrPNrDWLq6pfd=s600-w600" alt="Logo" style="height: 70px;">
-            <h1 style="margin-left: 0px;">Pitch Generator</h1>
+            <img src="https://lh3.googleusercontent.com/Xtt-WZqHiV8OjACMMMr6wMdoMGE7bABi-HYujupzevufo1kiHUFQZukI1JILhjItrPNrDWLq6pfd=s600-w600" alt="Logo" style="height: 40px;">
+            <h3 style="margin-left: 0px;">Pitch Generator</h1>
             </div>
             """, 
             unsafe_allow_html=True
@@ -25,6 +25,7 @@ def home_page():
         st.session_state.context = st.text_area(
             label="**What is the context of your pitch?**",
             placeholder="Eg. Build a \"why google cloud\" pitch for a US-based ecommerce company. Include GenAI solutions, as well as slide on sustainablity.",
+            height=68
         )
         st.markdown(
             """
@@ -38,7 +39,7 @@ def home_page():
                 "*Industry*",
                 options=["Financial Services","Retail","Technology"],
                 index=None,
-                placeholder="select",
+                placeholder="select"
             )
         with sol:
             st.session_state.solution = st.multiselect(
@@ -97,7 +98,7 @@ def main():
     st.set_page_config(
         page_icon="icons/gemini.png",
         page_title="PitchGen Demo",
-        layout="wide"
+        layout="wide",
         # initial_sidebar_state="collapsed"
     )
     # background: linear-gradient(to top, white 0%, #e4eaf5 13%, #e4eaf5 86%, white 95%);
