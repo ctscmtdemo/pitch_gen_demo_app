@@ -17,7 +17,7 @@ def home_page():
             """
             <div style="display: flex; align-items: center; justify-content: center;">
             <img src="https://lh3.googleusercontent.com/Xtt-WZqHiV8OjACMMMr6wMdoMGE7bABi-HYujupzevufo1kiHUFQZukI1JILhjItrPNrDWLq6pfd=s600-w600" alt="Logo" style="height: 70px;">
-            <h1 style="margin-left: 0px;">PitchGen</h1>
+            <h1 style="margin-left: 0px;">Pitch Generator</h1>
             </div>
             """, 
             unsafe_allow_html=True
@@ -36,35 +36,14 @@ def home_page():
         with ind:
             st.session_state.industry = st.selectbox(
                 "*Industry*",
-                options=["Consumer Packaged Goods",
- "Financial Services",
- "Gaming",
- "Healthcare & Life Sciences",
- "Insurance",
- "Manufacturing",
- "Media & Entertainment",
- "Public Sector - Non US",
- "Retail",
- "Software & Internet",
- "Supply Chain, Logistics & Transportation",
- "Telecommunications"]
-,
+                options=["Financial Services","Retail","Technology"],
                 index=None,
                 placeholder="select",
             )
         with sol:
             st.session_state.solution = st.multiselect(
                 "*Solution*",
-                options=["Applications",
- "Artificial Intelligence",
- "Data Analytics",
- "Databases",
- "Enterprise Applications & Cortex",
- "Infrastructure",
- "Productivity & Collaboration",
- "Security",
- "X-Enterprise"]
-,
+                options=["Artificial Intelligence", "Data Analytics"],
                 # index=None,
                 placeholder="select",
             )
@@ -76,12 +55,12 @@ def home_page():
             # st.text("")
             # st.text("")
             # st.text("")
-            st.session_state.er_num = st.text_input('*ER Number* *', placeholder="ER #")
+            st.session_state.er_num = st.text_input('*Version Number* *', placeholder="VR #")
         reg, prod, aud, dum = st.columns(4)
         with reg:
             st.session_state.region = st.selectbox(
                 "*Region*",
-                options=["APAC", "EMEA", "LATAM", "NORTHAM", "JAPAN", "GLOBAL"],
+                options=["GLOBAL"],
                 index=None,
                 placeholder="select",
             )

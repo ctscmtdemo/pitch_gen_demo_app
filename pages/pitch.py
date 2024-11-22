@@ -67,14 +67,20 @@ with side_bar.popover("Edit my Presentation", use_container_width=True):
         )
         
         with st.container(border=False):
-            if layout == "Timeline":
-                components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vS68hEl2ijHwKdNNvuB07aBRy7wA6VRehpv355iWgFHtOJwBzIoDX5Vxrn8EBWfFiTRXgrnyEsRv9WK/embed?start=false&loop=false&delayms=3000", height=300)
+            if layout == "Case Study":
+                components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQjnv7IgftNnIBH_gZH9U6Rvw7e6pmWMYBLfY9cd0lnyPMe6lWHQCbfVzzVQDDKaysVrQNUJMWyeZIb/embed?start=false&loop=false&delayms=3000", height=300)
+            elif layout == "Charts":
+                components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vTWQhkfeLcB-BUX2AXykfA4oihzWXIv92IJfyk-A0YEwj29geyUNboiUDSWeJMwRizWqb5we94w3ofi/embed?start=false&loop=false&delayms=3000", height=300)
+            elif layout == "Context":
+                components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vTs0_f7f0z99GyExfcpU6FS8ZqptoOgcYoBodQ_PtdHTbYMnOV5RHu0mprW4s8u5rp0c3nNeYqh-oOo/embed?start=false&loop=false&delayms=3000", height=300)
+            elif layout == "Timeline":
+                components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vRKx_IflRWq6KmroNHwqFutHAy95OQW_YbXsvrrFeB4hL1RcHaCVv8ijMNO5myVAgWwOdfTYG3Cq4DR/embed?start=false&loop=false&delayms=3000", height=300)
             elif layout == "Next Steps":
-                components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vSlsKdAXktizJiacJRbZSSh3Az4VGhJdQD6lse028xKGStUIO0VfmHpxWKccj9ko6VM144J20RBajgX/embed?start=false&loop=false&delayms=3000", height=300)
+                components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vT4qOYAdiPMBQsdZKohgze0cTnocfp2Ruc0S6UijiMf_vM_WyINv7Vgk7KjqaMY-B_BIQ1sAwll_P-s/embed?start=false&loop=false&delayms=3000", height=300)
             elif layout == "Circle Charts":
-                components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vRjDMeq-mL1DDEx82Ot881o89tDeBb7RfXx5VGohjTiyGvBSU_HcUm1x-Tk5YQw1Eye_kHjGESsh03b/embed?start=false&loop=false&delayms=3000", height=300)
+                components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQ9DsmjjiV-zmaySzrluyEi4X__uNGBEONKyvof28_2jA0q5Orra1m_DQyaIssfwSzlPZkCmcDp4nDd/embed?start=false&loop=false&delayms=3000", height=300)
         
-        if st.button("Generate Slide", use_container_width=True):
+        if st.button("Generate Slide", use_container_width=True, disabled=True):
             with st.spinner('Generating...'):
                 time.sleep(3)
             st.success("Success")
@@ -97,14 +103,20 @@ with side_bar.popover("Edit my Presentation", use_container_width=True):
         )
 
         with st.container(border=False):
-            if layout == "Timeline":
-                components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vS68hEl2ijHwKdNNvuB07aBRy7wA6VRehpv355iWgFHtOJwBzIoDX5Vxrn8EBWfFiTRXgrnyEsRv9WK/embed?start=false&loop=false&delayms=3000", height=300)
+            if layout == "Case Study":
+                components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQjnv7IgftNnIBH_gZH9U6Rvw7e6pmWMYBLfY9cd0lnyPMe6lWHQCbfVzzVQDDKaysVrQNUJMWyeZIb/embed?start=false&loop=false&delayms=3000", height=300)
+            elif layout == "Charts":
+                components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vTWQhkfeLcB-BUX2AXykfA4oihzWXIv92IJfyk-A0YEwj29geyUNboiUDSWeJMwRizWqb5we94w3ofi/embed?start=false&loop=false&delayms=3000", height=300)
+            elif layout == "Context":
+                components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vTs0_f7f0z99GyExfcpU6FS8ZqptoOgcYoBodQ_PtdHTbYMnOV5RHu0mprW4s8u5rp0c3nNeYqh-oOo/embed?start=false&loop=false&delayms=3000", height=300)
+            elif layout == "Timeline":
+                components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vRKx_IflRWq6KmroNHwqFutHAy95OQW_YbXsvrrFeB4hL1RcHaCVv8ijMNO5myVAgWwOdfTYG3Cq4DR/embed?start=false&loop=false&delayms=3000", height=300)
             elif layout == "Next Steps":
-                components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vSlsKdAXktizJiacJRbZSSh3Az4VGhJdQD6lse028xKGStUIO0VfmHpxWKccj9ko6VM144J20RBajgX/embed?start=false&loop=false&delayms=3000", height=300)
+                components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vT4qOYAdiPMBQsdZKohgze0cTnocfp2Ruc0S6UijiMf_vM_WyINv7Vgk7KjqaMY-B_BIQ1sAwll_P-s/embed?start=false&loop=false&delayms=3000", height=300)
             elif layout == "Circle Charts":
-                components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vRjDMeq-mL1DDEx82Ot881o89tDeBb7RfXx5VGohjTiyGvBSU_HcUm1x-Tk5YQw1Eye_kHjGESsh03b/embed?start=false&loop=false&delayms=3000", height=300)
+                components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vQ9DsmjjiV-zmaySzrluyEi4X__uNGBEONKyvof28_2jA0q5Orra1m_DQyaIssfwSzlPZkCmcDp4nDd/embed?start=false&loop=false&delayms=3000", height=300)
         
-        if st.button("Transform Slide", use_container_width=True, key="tansform_button"):
+        if st.button("Transform Slide", use_container_width=True, key="tansform_button", disabled=True):
             with st.spinner('Transforming...'):
                 time.sleep(3)
             st.success("Success")
