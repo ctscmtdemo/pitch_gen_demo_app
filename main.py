@@ -20,15 +20,16 @@ def home_page():
         st.markdown(
             """
             <div style="display: flex; align-items: center; justify-content: center;">
-            <img src="https://lh3.googleusercontent.com/Xtt-WZqHiV8OjACMMMr6wMdoMGE7bABi-HYujupzevufo1kiHUFQZukI1JILhjItrPNrDWLq6pfd=s600-w600" alt="Logo" style="height: 70px;">
-            <h1 style="margin-left: 0px;">Pitch Generator</h1>
+            <img src="https://lh3.googleusercontent.com/Xtt-WZqHiV8OjACMMMr6wMdoMGE7bABi-HYujupzevufo1kiHUFQZukI1JILhjItrPNrDWLq6pfd=s600-w600" alt="Logo" style="height: 60px;">
+            <h1 style="margin-left: 0px; font-size: 40px">Pitch Generator</h1>
             </div>
             """, 
             unsafe_allow_html=True
         )        
         st.session_state.context = st.text_area(
             label="**What is the context of your pitch?**",
-            placeholder="Eg. Build a \"why google cloud\" pitch for a US-based ecommerce company. Include GenAI solutions, as well as slide on sustainablity."
+            placeholder="Eg. Build a \"why google cloud\" pitch for a US-based ecommerce company. Include GenAI solutions, as well as slide on sustainablity.",
+            height=68
         )
         st.markdown(
             """
@@ -44,6 +45,7 @@ def home_page():
                 index=None,
                 placeholder="select"
             )
+            
         with sol:
             st.session_state.solution = st.multiselect(
                 "*Solution*",
@@ -100,7 +102,7 @@ def home_page():
 def main():
     st.set_page_config(
         page_icon="icons/gemini.png",
-        page_title="PitchGen Demo",
+        page_title="CTS-PitchGen Demo",
         layout="wide",
         # initial_sidebar_state="collapsed"
     )
@@ -108,21 +110,22 @@ def main():
     st.markdown("""
     <style>
     .stApp {
-        background: linear-gradient(to top, white 0%, #d9e1f0 13%, #d9e1f0 83%, white 90%);
-        font-size: 10;
+        background: linear-gradient(to top, white 8%, #d9e1f0 13%, #d9e1f0 83%, white 90%);
     }
     </style>
     """, unsafe_allow_html=True)
     st.markdown("""
         <style>
                .block-container {
-                    padding-top: 1.8rem;
+                    padding-top: 2rem;
                     padding-bottom: 0rem;
                     padding-left: 6rem;
                     padding-right: 6rem;
                 }
+
         </style>
         """, unsafe_allow_html=True)
+
 
     st.session_state.context = ''
     st.session_state.industry = ''
@@ -134,18 +137,7 @@ def main():
     st.session_state.er_num = ''
     st.session_state.deck_url = ''
     st.session_state.outlines = []
-    # if 'context' not in st.session_state:
-    #     st.session_state.context = ''
-    # if 'industry' not in st.session_state:
-    #     st.session_state.industry = ''
-    # if 'solution' not in st.session_state:
-    #     st.session_state.solution = ''
-    # if 'customer_name' not in st.session_state:
-    #     st.session_state.customer_name = ''
-    # if 'deck_url' not in st.session_state:
-    #     st.session_state.deck_url = ''
-    # if 'outlines' not in st.session_state:
-    #     st.session_state.outlines = []
+    
     home_page()
 
 if __name__ == '__main__':
