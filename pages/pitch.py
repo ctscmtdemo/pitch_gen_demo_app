@@ -64,7 +64,7 @@ with side_bar.popover("Edit my Presentation", use_container_width=True):
         slide_content = st.text_area("*Slide Content*", placeholder="This slide provides an overview of the sustainable benefits of GCP")
         theme = st.selectbox(
             label="*Theme & Layout*",
-            options=["Google Cloud Style 2024"],
+            options=["Cloud Style 2024"],
             placeholder="Select Theme",
             index=None
             )
@@ -98,7 +98,7 @@ with side_bar.popover("Edit my Presentation", use_container_width=True):
         criteria = st.text_area("*Desired output criteria*", placeholder="Optional details to reshuffle your slide (eg. provide more details, rewrite for specific audience, make it visual)")
         theme = st.selectbox(
             label="*Theme & Layout*",
-            options=["Google Cloud Style 2024"],
+            options=["Cloud Style 2024"],
             placeholder="Select Theme",
             index=None,
             key="transform_theme"
