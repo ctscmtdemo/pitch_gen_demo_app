@@ -45,7 +45,7 @@ with st.container(border=True, key="oc",height=500):
     with open("mappings.json", 'r') as mappings:
         mappings = json.load(mappings)
     for mapping in mappings:
-        if st.session_state.model_response["industry"] == mapping["industry"] and st.session_state.model_response["solution"] == mapping["solution"]:
+        if st.session_state.model_response["industry"] == mapping["industry"] or st.session_state.model_response["solution"] == mapping["solution"]:
             st.session_state.outlines = mapping["outlines"]
             st.session_state.deck_url = mapping["deck_url"]
             break
