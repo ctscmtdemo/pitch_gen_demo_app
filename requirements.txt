@@ -2,3 +2,7 @@ streamlit
 streamlit-screen-stats
 streamlit-browser-session-storage
 streamlit-local-storage
+google-generativeai
+python-dotenv
+langchain
+langchain-google-genai

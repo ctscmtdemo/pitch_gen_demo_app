@@ -1,12 +1,41 @@
 import time
 import json
 import streamlit as st
-# from st_screen_stats import ScreenData, StreamlitNativeWidgetScreen, WindowQuerySize, WindowQueryHelper
+import google.generativeai as genai
 
-# screenD = ScreenData(setTimeout=1000)
-# screen_d = screenD.st_screen_data()
-# st.write(screen_d)
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
+generation_config = {
+"temperature": 0,
+"top_p": 0.95,
+"top_k": 40,
+"max_output_tokens": 8192,
+"response_mime_type": "application/json",
+"response_schema": {
+    "type":"object",
+    "properties":{
+        "industry":{
+            "type":"string"
+        },
+        "solution":{
+            "type":"string"
+        }
+    }
+}
+}
 
+model = genai.GenerativeModel(
+    model_name="gemini-1.5-flash",
+    generation_config=generation_config,
+)
+prompt = """
+Given a context extract industry and solution and select only one of the given options for industry and solution.
+```context
+{context}
+```
+industry = ["Financial Services","Retail","Technology"]
+solution = ["Artificial Intelligence", "Data Analytics"]
+
+"""
 def home_page():
     # st-emotion-cache-1wmy9hl
     with st.container(border=True, key="hc"):#, height=320):
@@ -31,6 +60,10 @@ def home_page():
             placeholder="Eg. Build a \"why google cloud\" pitch for a US-based ecommerce company. Include GenAI solutions, as well as slide on sustainablity.",
             height=68
         )
+        if st.session_state.context != '':
+            model_response = model.generate_content(prompt.format(context = st.session_state.context))
+            st.session_state.model_response = json.loads(model_response.text)
+        
         st.markdown(
             """
             <p>Enter a prompt above to create your presentation. Add details below to further customize the content of your asset. <a href="">Learn more</a></p>
@@ -45,7 +78,7 @@ def home_page():
                 index=None,
                 placeholder="select"
             )
-            
+
         with sol:
             st.session_state.solution = st.multiselect(
                 "*Solution*",
@@ -58,9 +91,6 @@ def home_page():
             st.session_state.customer_name = st.text_input('*Customer Name*')
         # dum1, dum2, dum3, er = st.columns(4, vertical_alignment="center")
         with dum:
-            # st.text("")
-            # st.text("")
-            # st.text("")
             st.session_state.er_num = st.text_input('*Version Number* *', placeholder="VR #")
         reg, prod, aud, dum = st.columns(4)
         with reg:
@@ -137,6 +167,8 @@ def main():
     st.session_state.er_num = ''
     st.session_state.deck_url = ''
     st.session_state.outlines = []
+    st.session_state.model_respose = {}
+    
     
     home_page()
 

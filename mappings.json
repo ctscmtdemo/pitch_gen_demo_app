@@ -1,8 +1,8 @@
 [
 {
     "context":"Generate a pitch deck for a technology company for a RFP . The generated pitch should include a successful vendor proposal, covering areas like company background, technical expertise, project management capabilities, and proposal format.",
-    "industry":"",
-    "solution":"",
+    "industry":"Technology",
+    "solution":"Artificial Intelligence",
     "customer_name":"",
     "outlines":[
         "Brief overview of the organization and its needs.",
@@ -23,9 +23,9 @@
 },
 {
     "context":"Generate a pitch deck for a technology company, where the pitch deck should concentrate on the key aspects of a camera software development support RFP, including the project scope, vendor qualifications, technical requirements, and evaluation process.",
-    "industry":"Financial Services",
-    "solution":"Artificial intelligence",
-    "customer_name":"HDFC Bank",
+    "industry":"Technology",
+    "solution":"Artificial Intelligence",
+    "customer_name":"",
     "outlines":[
         "Brief overview of the organization and its camera products.",
         "Problem statement or challenge to be addressed.",
@@ -41,5 +41,78 @@
         "Intellectual property rights, confidentiality, and liability."
     ],
     "deck_url":"https://docs.google.com/presentation/d/e/2PACX-1vTeZ91pt43ujf4OPs-Nl9T_EkvRDZTOerXc0jj7cpCv2Nz34-zdiZBtCZRh6Kap_aK_ri9BLlBya7Ga/embed?start=false&loop=false&delayms=3000"
+},
+{
+    "context":"",
+    "industry":"Retail",
+    "solution":"Artificial Intelligence",
+    "customer_name":"Seven Eleven Taiwan",
+    "outlines":[
+        "The retail industry is undergoing a significant transformation, driven by the rise of e-commerce, changing customer expectations, and the need for greater efficiency.",
+"Google Cloud offers a comprehensive suite of solutions that can help retailers address these challenges and achieve their business goals.",
+"GenAI for Retail Industry",
+"Google Cloud for Anthos for retail",
+"Application Modernization solutions for Retail",
+"With Google Cloud, retailers can stay ahead of the competition and thrive in the digital age.",
+"Google Cloud's solutions are designed to help retailers improve the customer experience, streamline internal processes, and make data-driven decisions.",
+"GenAI is a new generation of artificial intelligence (AI) that can help retailers generate creative content, personalize the customer experience, and improve operational efficiency.",
+"Application Modernization solutions for Retail",
+"These solutions can help retailers improve the performance, scalability, and security of their applications.",
+"Customer Success Stories",
+"Google Cloud has helped many retailers achieve success, including Macy's, Walmart, and Target.",
+"Next Steps"
+    ],
+    "deck_url":"https://docs.google.com/presentation/d/e/2PACX-1vTgGSbS4zeKO9Mh9pGFaCacfAcU3as_ZhTTEDpxvsIiDibXIj3aTLiYDEmarlSodpmPapcztz9Ex2cx/embed?start=false&loop=false&delayms=3000"
+},
+{
+    "context":"",
+    "industry":"Financial Services",
+    "solution":"Artificial Intelligence",
+    "customer_name":"HDFC",
+    "outlines":[
+        "Financial services companies face a complex and evolving landscape",
+        "Data is the lifeblood of the financial services industry",
+        "Google BigQuery is a powerful, scalable, and cost-effective data analytics platform",
+        "BigQuery can help financial services companies make better decisions",
+        "BigQuery can help financial services companies gain insights from their data",
+        "BigQuery can help financial services companies improve their customer experience",
+        "BigQuery can help financial services companies reduce their costs",
+        "BigQuery can help financial services companies comply with regulations",
+        "BigQuery is trusted by leading financial services companies around the world",
+        "Examples of companies benefited",
+        "How Google BigQuery can help your financial services company",
+        "Get started with Google BigQuery today"
+    ],
+    "deck_url":"https://docs.google.com/presentation/d/e/2PACX-1vQDh4kM_6ezSfAFBO6WuSnU2Ibyd4HaRE-ZN1rGi-Tp6AAHvxjQZ44KvMAd88lTkRnfoJF1fVQv_WJl/embed?start=false&loop=false&delayms=3000"
+},
+{
+    "context":"",
+    "industry":"Retail",
+    "solution":"Artificial Intelligence",
+    "customer_name":"OLX",
+    "outlines":[
+        "The e-commerce industry is booming, but it also faces challenges such as intense competition, rising customer expectations, and the need to manage complex supply chains.",
+"Google is already helping the e-commerce industry by providing a range of solutions that can help businesses reach new customers, personalize experiences, and bring products to market faster.",
+"Google Cloud is the market leader in marketing analytics, with a comprehensive suite of tools that can help businesses track their marketing performance, measure ROI, and optimize their campaigns.",
+"Google Cloud's AI solutions can help e-commerce businesses improve their customer experience, personalize their marketing, and optimize their operations.",
+"Google Cloud has a proven track record of helping e-commerce businesses succeed. Some of our customer success stories include:",
+"Next steps: We would like to schedule a follow-up meeting to discuss your specific needs and how Google Cloud can help you achieve your business goals."
+    ],
+    "deck_url":"https://docs.google.com/presentation/d/e/2PACX-1vSANC4rvT2o-JjRbrUDg5pglObwcDr9RfpcAxppSPnLSgHOxUl0g2Xdg9lwoz-YVR1jGmtKjww3XM2k/embed?start=false&loop=false&delayms=3000"
+},
+{
+    "context":"",
+    "industry":"Financial Services",
+    "solution":"Artificial Intelligence",
+    "customer_name":"HSBC",
+    "outlines":[
+        "Introduction to Google Cloud",
+"Overview of AI transformations",
+"Google's operations, risk assessment, and decision-making",
+"How Google Cloud can help HSBC achieve its business goals",
+"Case studies of successful AI implementations in financial services",
+"Next steps for HSBC and Google Cloud"
+    ],
+    "deck_url":"https://docs.google.com/presentation/d/e/2PACX-1vQAeR37uC-ZDL0xYa1nIV1XH0AsDvgelvkYBJol6T4X-ViGAv96U77dV97KttZz-Q8wyqm0SvMA5A5V/embed?start=false&loop=false&delayms=3000"
 }
 ]
