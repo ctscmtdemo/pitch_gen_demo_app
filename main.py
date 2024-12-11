@@ -29,6 +29,8 @@ model = genai.GenerativeModel(
 )
 prompt = """
 Given a context extract industry and solution and select only one of the given options for industry and solution.
+If TD Bank is menioned just return industry as "Financial Services".
+
 ```context
 {context}
 ```

@@ -1,0 +1,15 @@
+{
+    "context":"",
+    "industry":"Financial Services",
+    "solution":"Artificial Intelligence",
+    "customer_name":"HSBC",
+    "outlines":[
+        "Introduction to Google Cloud",
+"Overview of AI transformations",
+"Google's operations, risk assessment, and decision-making",
+"How Google Cloud can help HSBC achieve its business goals",
+"Case studies of successful AI implementations in financial services",
+"Next steps for HSBC and Google Cloud"
+    ],
+    "deck_url":"https://docs.google.com/presentation/d/e/2PACX-1vQAeR37uC-ZDL0xYa1nIV1XH0AsDvgelvkYBJol6T4X-ViGAv96U77dV97KttZz-Q8wyqm0SvMA5A5V/embed?start=false&loop=false&delayms=3000"
+}

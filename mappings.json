@@ -68,6 +68,31 @@
     "context":"",
     "industry":"Financial Services",
     "solution":"Artificial Intelligence",
+    "customer_name":"TD Bank",
+    "outlines":[
+        "TD Bank: A Leader in Financial Services",
+        "The Challenges of Financial Crime and Fraud",
+        "Google Cloud: A Trusted Partner for Security and Compliance",
+        "Google Cloud's Security Solutions for Banking",
+        "Advanced Security Tools for Fraud Detection and Prevention",
+        "AI-Powered AML and Fraud Detection",
+        "Data Analytics for Enhanced Risk Management",
+        "Compliance and Regulatory Support",
+        "The Benefits of Google Cloud for TD Bank",
+        "Improved Security and Compliance",
+        "Enhanced Fraud Detection and Prevention",
+        "Reduced Operational Costs",
+        "Increased Efficiency and Innovation",
+        "A Secure and Efficient Future with Google Cloud",
+        "Customer References",
+        "Next Steps for TD Bank and Google Cloud"
+    ],
+    "deck_url":"https://docs.google.com/presentation/d/e/2PACX-1vTLKHbO56H-5pZo5C0EYSVvuJsuL7ALRP34I3IvbYTQf50lCLK6I_mLfIP19Okq1mUlDmg1Hu1Mbusg/embed?start=false&loop=false&delayms=3000"
+},
+{
+    "context":"",
+    "industry":"Financial Services",
+    "solution":"Artificial Intelligence",
     "customer_name":"HDFC",
     "outlines":[
         "Financial services companies face a complex and evolving landscape",
@@ -99,20 +124,6 @@
 "Next steps: We would like to schedule a follow-up meeting to discuss your specific needs and how Google Cloud can help you achieve your business goals."
     ],
     "deck_url":"https://docs.google.com/presentation/d/e/2PACX-1vSANC4rvT2o-JjRbrUDg5pglObwcDr9RfpcAxppSPnLSgHOxUl0g2Xdg9lwoz-YVR1jGmtKjww3XM2k/embed?start=false&loop=false&delayms=3000"
-},
-{
-    "context":"",
-    "industry":"Financial Services",
-    "solution":"Artificial Intelligence",
-    "customer_name":"HSBC",
-    "outlines":[
-        "Introduction to Google Cloud",
-"Overview of AI transformations",
-"Google's operations, risk assessment, and decision-making",
-"How Google Cloud can help HSBC achieve its business goals",
-"Case studies of successful AI implementations in financial services",
-"Next steps for HSBC and Google Cloud"
-    ],
-    "deck_url":"https://docs.google.com/presentation/d/e/2PACX-1vQAeR37uC-ZDL0xYa1nIV1XH0AsDvgelvkYBJol6T4X-ViGAv96U77dV97KttZz-Q8wyqm0SvMA5A5V/embed?start=false&loop=false&delayms=3000"
 }
 ]
+
