@@ -1,4 +1,21 @@
 [
+    {
+        "context":"",
+        "industry":"Financial Services",
+        "solution":"Artificial Intelligence",
+        "customer_name":"Intuit",
+        "outlines":["Intuit's mission to power prosperity around the world",
+        "The growing challenge of financial crime",
+        "Intuit's commitment to fighting financial crime",
+        "How Google Cloud can help Intuit",
+        "Google Cloud's security solutions",
+        "Google Cloud's data analytics solutions",
+        "Google Cloud's AI and ML solutions",
+        "The benefits of using Google Cloud",
+        "Case studies of Google Cloud customers in the financial services industry",
+        "Next steps for Intuit and Google Cloud"],
+        "deck_url":"https://docs.google.com/presentation/d/e/2PACX-1vSCkGZxr-E-ALkekzqCEJcDCco36oKJjABH9uQt56cIYqlfjgIoKbWgIkBtpA3WLDaq9XUJpEjMn_VW/embed?start=false&loop=false&delayms=3000"
+    },
 {
     "context":"Generate a pitch deck for a technology company for a RFP . The generated pitch should include a successful vendor proposal, covering areas like company background, technical expertise, project management capabilities, and proposal format.",
     "industry":"Technology",
@@ -125,5 +142,6 @@
     ],
     "deck_url":"https://docs.google.com/presentation/d/e/2PACX-1vSANC4rvT2o-JjRbrUDg5pglObwcDr9RfpcAxppSPnLSgHOxUl0g2Xdg9lwoz-YVR1jGmtKjww3XM2k/embed?start=false&loop=false&delayms=3000"
 }
+
 ]
 
