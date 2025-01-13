@@ -18,6 +18,9 @@ generation_config = {
         },
         "solution":{
             "type":"string"
+        }, 
+        "company_name":{
+            "type":"string"
         }
     }
 }
@@ -28,15 +31,15 @@ model = genai.GenerativeModel(
     generation_config=generation_config,
 )
 prompt = """
-Given a context extract industry and solution and select only one of the given options for industry and solution.
-If TD Bank is menioned just return industry as "Financial Services".
-
+Given a context extract industry and solution and select only one of the given options for industry and solution, If industry and solution is not mentioned return empty string.
+If any company or any organization name is mentioned do extract that as well. If company or any organization name is not mentioned return empty string.
+If any company or any organization name is mentioned and Industry is not mentiond return empty string for Industry, do not create industry on your own.
 ```context
 {context}
 ```
-industry = ["Financial Services","Retail","Technology"]
-solution = ["Artificial Intelligence", "Data Analytics"]
-
+industry = ["Financial Services","Retail","Technology", "Financial Software Company", ""]
+solution = ["Artificial Intelligence", "Data Analytics", ""]
+company_name = ["Intuit", "Seven Eleven Taiwan", "TD Bank", "HDFC", "OLX", ""]
 """
 def home_page():
     # st-emotion-cache-1wmy9hl
@@ -58,7 +61,7 @@ def home_page():
             unsafe_allow_html=True
         )        
         st.session_state.context = st.text_area(
-            label="**What is the context of your pitch?**",
+            label="**What is the context of your pitch? (E.g. Create a deck on financial banking company ... fight against money laundering, financial crime and fraudulent transaction)**",
             placeholder="Eg. Build a \"why google cloud\" pitch for a US-based ecommerce company. Include GenAI solutions, as well as slide on sustainablity.",
             height=68
         )
@@ -66,9 +69,15 @@ def home_page():
             model_response = model.generate_content(prompt.format(context = st.session_state.context))
             st.session_state.model_response = json.loads(model_response.text)
         
+        # st.markdown(
+        #     """
+        #     <p>Enter a prompt above to create your presentation. Add details below to further customize the content of your asset. <a href="">Learn more</a></p>
+        #     """,
+        #     unsafe_allow_html = True
+        # )
         st.markdown(
             """
-            <p>Enter a prompt above to create your presentation. Add details below to further customize the content of your asset. <a href="">Learn more</a></p>
+            <p>Enter a prompt above to create your presentation. Add details below to further customize the content of your asset (optional).</p>
             """,
             unsafe_allow_html = True
         )
