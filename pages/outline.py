@@ -37,12 +37,12 @@ with st.container(border=True, key="oc",height=500):
             st.switch_page("main.py")
             st.rerun()
         st.stop()
-    if st.session_state.solution!=[] and st.session_state.model_response["solution"] != st.session_state.solution:
-        st.error(f"Unable to generate Outlines, you have mentioned {st.session_state.model_response['solution']} as solution in context but selected {st.session_state.solution}. Please check inputs!")
-        if st.button("HOME", use_container_width=True):
-            st.switch_page("main.py")
-            st.rerun()
-        st.stop()
+    # if st.session_state.solution!=[] and st.session_state.model_response["solution"] != st.session_state.solution:
+    #     st.error(f"Unable to generate Outlines, you have mentioned {st.session_state.model_response['solution']} as solution in context but selected {st.session_state.solution}. Please check inputs!")
+    #     if st.button("HOME", use_container_width=True):
+    #         st.switch_page("main.py")
+    #         st.rerun()
+    #     st.stop()
     with open("mappings.json", 'r') as mappings:
         mappings = json.load(mappings)
     for mapping in mappings:
