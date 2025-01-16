@@ -37,9 +37,9 @@ If any company or any organization name is mentioned and Industry is not mention
 ```context
 {context}
 ```
-industry = ["Financial Services","Retail","Technology", "Financial Software Company", ""]
+industry = ["Financial Services","Retail","Technology", "Financial Software Company", "Media & Entertainment", ""]
 solution = ["Artificial Intelligence", "Data Analytics", ""]
-company_name = ["Intuit", "Seven Eleven Taiwan", "TD Bank", "HDFC", "OLX", ""]
+company_name = ["Intuit", "Seven Eleven Taiwan", "TD Bank", "HDFC", "OLX", "Warner Bros", ""]
 """
 def home_page():
     # st-emotion-cache-1wmy9hl
@@ -85,7 +85,7 @@ def home_page():
         with ind:
             st.session_state.industry = st.selectbox(
                 "*Industry*",
-                options=["Financial Services","Retail","Technology"],
+                options=["Financial Services","Retail","Technology", "Media & Entertainment"],
                 index=None,
                 placeholder="select"
             )
