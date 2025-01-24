@@ -1,5 +1,24 @@
 [
     {
+        "context":"Create a deck on Citizen Bank, a Wealth Management company. The deck should focus on where Data Science can help on to challenging macro environment for investors and their advisors to find the right return/risk combination",
+        "industry":"Financial Services",
+        "solution":"Artificial intelligence",
+        "customer_name":"Citizen Bank",
+        "outlines":[
+            "The current macro environment is challenging for investors and their advisors.",
+            "Investors are looking for ways to protect their capital and generate returns in a low-growth, high-inflation environment.",
+            "Data science can help investors and advisors find the right return/risk combination for their individual circumstances.",
+            "Google Cloud offers a variety of data science solutions that can help wealth management firms improve their investment performance.",
+            "These solutions include machine learning, artificial intelligence, and big data analytics.",
+            "Google Cloud can help wealth management firms make better investment decisions, improve their customer service, and reduce their costs.",
+            "Google Cloud is the leading provider of data science solutions for the financial services industry.",
+            "We have a proven track record of helping wealth management firms achieve their investment goals.",
+            "We are committed to helping our clients succeed in the challenging macro environment.",
+            "We invite you to learn more about our data science solutions for wealth management."
+        ],
+        "deck_url":"https://docs.google.com/presentation/d/e/2PACX-1vSORJ7JI_a960eQjVrgTwYB4ApaZE95zlU87EXYPg3o4UOEJwav_dsSGg3DDJJMMDfmewqoKhMdHQKa/embed?start=false&loop=false&delayms=3000"
+    },
+    {
         "context":"",
         "industry":"Financial Software Company",
         "solution":"Artificial Intelligence",
