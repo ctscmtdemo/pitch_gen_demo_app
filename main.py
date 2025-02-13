@@ -37,9 +37,9 @@ If any company or any organization name is mentioned and Industry is not mention
 ```context
 {context}
 ```
-industry = ["Financial Services","Retail","Technology", "Financial Software Company", "Media & Entertainment", ""]
+industry = ["Software & Internet","Financial Services","Retail","Technology", "Financial Software Company", "Media & Entertainment", ""]
 solution = ["Artificial Intelligence", "Data Analytics", ""]
-company_name = ["Citizen Bank", "Intuit", "Seven Eleven Taiwan", "TD Bank", "HDFC", "OLX", "Warner Bros", ""]
+company_name = ["Cognizant Technology Solution","Citizen Bank", "Intuit", "Seven Eleven Taiwan", "TD Bank", "HDFC", "OLX", "Warner Bros", ""]
 """
 def home_page():
     # st-emotion-cache-1wmy9hl
