@@ -5,25 +5,25 @@ import google.generativeai as genai
 
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 generation_config = {
-"temperature": 0,
-"top_p": 0.95,
-"top_k": 40,
-"max_output_tokens": 8192,
-"response_mime_type": "application/json",
-"response_schema": {
-    "type":"object",
-    "properties":{
-        "industry":{
-            "type":"string"
-        },
-        "solution":{
-            "type":"string"
-        }, 
-        "company_name":{
-            "type":"string"
+    "temperature": 0,
+    "top_p": 0.95,
+    "top_k": 40,
+    "max_output_tokens": 8192,
+    "response_mime_type": "application/json",
+    "response_schema": {
+        "type": "object",
+        "properties": {
+            "industry": {
+                "type": "string"
+            },
+            "solution": {
+                "type": "string"
+            },
+            "company_name": {
+                "type": "string"
+            }
         }
     }
-}
 }
 
 model = genai.GenerativeModel(
@@ -37,13 +37,15 @@ If any company or any organization name is mentioned and Industry is not mention
 ```context
 {context}
 ```
-industry = ["Software & Internet","Financial Services","Retail","Technology", "Financial Software Company", "Media & Entertainment", ""]
+industry = ["Telecommunication","Software & Internet","Financial Services","Retail","Technology", "Financial Software Company", "Media & Entertainment", ""]
 solution = ["Artificial Intelligence", "Data Analytics", ""]
-company_name = ["Cognizant Technology Solution","Citizen Bank", "Intuit", "Seven Eleven Taiwan", "TD Bank", "HDFC", "OLX", "Warner Bros", ""]
+company_name = ["VMO2", "Cognizant Technology Solution","Citizen Bank", "Intuit", "Seven Eleven Taiwan", "TD Bank", "HDFC", "OLX", "Warner Bros", ""]
 """
+
+
 def home_page():
     # st-emotion-cache-1wmy9hl
-    with st.container(border=True, key="hc"):#, height=320):
+    with st.container(border=True, key="hc"):  # , height=320):
         # st.markdown("""
         #     <style>
         #     .st-key-hc {
@@ -57,18 +59,19 @@ def home_page():
             <img src="https://lh3.googleusercontent.com/Xtt-WZqHiV8OjACMMMr6wMdoMGE7bABi-HYujupzevufo1kiHUFQZukI1JILhjItrPNrDWLq6pfd=s600-w600" alt="Logo" style="height: 60px;">
             <h1 style="margin-left: 0px; font-size: 40px">Pitch Generator</h1>
             </div>
-            """, 
+            """,
             unsafe_allow_html=True
-        )        
+        )
         st.session_state.context = st.text_area(
             label="**What is the context of your pitch? (E.g. Create a deck on financial banking company ... fight against money laundering, financial crime and fraudulent transaction)**",
             placeholder="Eg. Build a \"why google cloud\" pitch for a US-based ecommerce company. Include GenAI solutions, as well as slide on sustainablity.",
             height=68
         )
         if st.session_state.context != '':
-            model_response = model.generate_content(prompt.format(context = st.session_state.context))
+            model_response = model.generate_content(
+                prompt.format(context=st.session_state.context))
             st.session_state.model_response = json.loads(model_response.text)
-        
+
         # st.markdown(
         #     """
         #     <p>Enter a prompt above to create your presentation. Add details below to further customize the content of your asset. <a href="">Learn more</a></p>
@@ -79,13 +82,14 @@ def home_page():
             """
             <p>Enter a prompt above to create your presentation. Add details below to further customize the content of your asset (optional).</p>
             """,
-            unsafe_allow_html = True
+            unsafe_allow_html=True
         )
         ind, sol, cust, dum = st.columns(4)
         with ind:
             st.session_state.industry = st.selectbox(
                 "*Industry*",
-                options=["Financial Services","Retail","Technology", "Media & Entertainment"],
+                options=["Financial Services", "Retail",
+                         "Technology", "Media & Entertainment"],
                 index=None,
                 placeholder="select"
             )
@@ -97,12 +101,13 @@ def home_page():
                 # index=None,
                 placeholder="select",
             )
-            
+
         with cust:
             st.session_state.customer_name = st.text_input('*Customer Name*')
         # dum1, dum2, dum3, er = st.columns(4, vertical_alignment="center")
         with dum:
-            st.session_state.er_num = st.text_input('*Version Number* *', placeholder="VR #")
+            st.session_state.er_num = st.text_input(
+                '*Version Number* *', placeholder="VR #")
         reg, prod, aud, dum = st.columns(4)
         with reg:
             st.session_state.region = st.selectbox(
@@ -114,7 +119,8 @@ def home_page():
         with prod:
             st.session_state.product = st.multiselect(
                 "*Product*",
-                options=["AI Accelerators", "AI Accelerators & ML Frameworks", "AI Component - Natural Language", "AI Platform Training", "AI Platform Vision NAS", "Advisory Notifications", "Agent Assist", "AlloyDB", "Analytics Hub", "Anthos", "Anthos Config Management", "Anthos for Virtual Machines", "Anti-Money Laundering (AML)", "Apigee", "Apigee Platform", "App Engine", "AppSheet", "Artifact Registry", "Backup for GKE", "BeyondCorp Enterprise", "BigQuery", "BigQuery / Dremel", "BigQuery BI Engine", "BigQuery ML", "BigQuery Omni", "Blockchain Node Engine", "CCAI Insights", "CCAI Platform", "Certificate Authority Service", "Chrome Enterprise", "Chrome OS", "Chronicle SIEM", "Chronicle SOAR", "Chronicle Security Operations", "Cloud Access Policy (CAP) (Formerly IAM)", "Cloud Armor", "Cloud Backup & DR", "Cloud Bigtable", "Cloud Build", "Cloud CDN", "Cloud Composer", "Cloud DNS", "Cloud Data Catalog", "Cloud Data Fusion", "Cloud Data Loss Prevention (DLP) / Syft", "Cloud Data Transfer - Appliance", "Cloud Dataprep by Trifacta", "Cloud Dataflow", "Cloud Debugger", "Cloud Deploy", "Cloud Endpoints & API Gateway", "Cloud Firestore", "Cloud Functions", "Cloud Functions for Firebase", "Cloud Generative AI", "Cloud Graphics Processing Unit (GPU)", "Cloud HSM", "Cloud Identity-Aware Proxy", "Cloud Interconnect", "Cloud IoT Core", "Cloud KMS", "Cloud Load Balancing", "Cloud Logging", "Cloud Memorystore", "Cloud Monitoring", "Cloud NAT", "Cloud Marketplace", "Cloud Run", "Cloud SQL", "Cloud Scheduler", "Cloud Spanner", "Cloud Tasks", "Cloud Tensor Processing Unit (TPU)", "Cloud Trace", "Cloud VPN", "Cloud Workflows", "Connected Sheets", "Core Compute", "Cross Cloud Network", "Contact Center Insights", "Data Fusion", "Data Studio", "Database Migration Service", "Databases", "Dataplex", "Dataproc", "Datastream", "Dialogflow", "Document AI - Human in the Loop", "Document AI - Pretrained Models", "Document AI Warehouse", "Document AI Workbench (Custom Models)", "Document OCR", "Earth Engine", "Eventarc", "Filestore", "Firebase App Distribution", "Firebase Auth", "Firebase Machine Learning", "GCE - Autoscaler", "GCP Support", "Gemini for Google Cloud", "Gemini in Workspace", "Google Cloud Storage", "Google Distributed Cloud (GDC) in connected configuration", "Google Edge Cloud (GEC)", "Google Kubernetes Engine (GKE)", "Google Maps Platform", "Google Workspace", "Google Workspace Security", "Immersive Stream for XR", "Local SSD", "Looker", "ML Pipelines", "Mandiant", "Mandiant Consulting", "Mandiant Managed Defense", "Mandiant Threat Intelligence", "Media CDN", "Media Rendering APIs", "Natural Language API", "Networking", "Optimization AI", "Oracle on Bare Metal Servers", "Persistent Disk (PD)", "Pub/Sub", "Retail Recommendations AI", "Retail Search", "Secret Manager", "Security Analytics & Operations", "Security Command Center (SCC)", "Service Infrastructure", "Smart Factory Platform: Manufacturing", "Speech-to-Text API", "Storage Transfer Service", "TensorFlow Enterprise", "Transcode API", "Translation API", "VMware Engine", "Virtual Private Cloud (VPC)", "VPC Service Controls", "Vertex AI", "Vertex AI Agent Builder", "Video Intelligence API", "Vision API", "Visual Inspection AI", "Web Risk", "Web3", "reCAPTCHA Enterprise and Web Risk"],
+                options=["AI Accelerators", "AI Accelerators & ML Frameworks", "AI Component - Natural Language", "AI Platform Training", "AI Platform Vision NAS", "Advisory Notifications", "Agent Assist", "AlloyDB", "Analytics Hub", "Anthos", "Anthos Config Management", "Anthos for Virtual Machines", "Anti-Money Laundering (AML)", "Apigee", "Apigee Platform", "App Engine", "AppSheet", "Artifact Registry", "Backup for GKE", "BeyondCorp Enterprise", "BigQuery", "BigQuery / Dremel", "BigQuery BI Engine", "BigQuery ML", "BigQuery Omni", "Blockchain Node Engine", "CCAI Insights", "CCAI Platform", "Certificate Authority Service", "Chrome Enterprise", "Chrome OS", "Chronicle SIEM", "Chronicle SOAR", "Chronicle Security Operations", "Cloud Access Policy (CAP) (Formerly IAM)", "Cloud Armor", "Cloud Backup & DR", "Cloud Bigtable", "Cloud Build", "Cloud CDN", "Cloud Composer", "Cloud DNS", "Cloud Data Catalog", "Cloud Data Fusion", "Cloud Data Loss Prevention (DLP) / Syft", "Cloud Data Transfer - Appliance", "Cloud Dataprep by Trifacta", "Cloud Dataflow", "Cloud Debugger", "Cloud Deploy", "Cloud Endpoints & API Gateway", "Cloud Firestore", "Cloud Functions", "Cloud Functions for Firebase", "Cloud Generative AI", "Cloud Graphics Processing Unit (GPU)", "Cloud HSM", "Cloud Identity-Aware Proxy", "Cloud Interconnect", "Cloud IoT Core", "Cloud KMS", "Cloud Load Balancing", "Cloud Logging", "Cloud Memorystore", "Cloud Monitoring", "Cloud NAT", "Cloud Marketplace", "Cloud Run", "Cloud SQL", "Cloud Scheduler", "Cloud Spanner", "Cloud Tasks", "Cloud Tensor Processing Unit (TPU)", "Cloud Trace", "Cloud VPN", "Cloud Workflows", "Connected Sheets",
+                         "Core Compute", "Cross Cloud Network", "Contact Center Insights", "Data Fusion", "Data Studio", "Database Migration Service", "Databases", "Dataplex", "Dataproc", "Datastream", "Dialogflow", "Document AI - Human in the Loop", "Document AI - Pretrained Models", "Document AI Warehouse", "Document AI Workbench (Custom Models)", "Document OCR", "Earth Engine", "Eventarc", "Filestore", "Firebase App Distribution", "Firebase Auth", "Firebase Machine Learning", "GCE - Autoscaler", "GCP Support", "Gemini for Google Cloud", "Gemini in Workspace", "Google Cloud Storage", "Google Distributed Cloud (GDC) in connected configuration", "Google Edge Cloud (GEC)", "Google Kubernetes Engine (GKE)", "Google Maps Platform", "Google Workspace", "Google Workspace Security", "Immersive Stream for XR", "Local SSD", "Looker", "ML Pipelines", "Mandiant", "Mandiant Consulting", "Mandiant Managed Defense", "Mandiant Threat Intelligence", "Media CDN", "Media Rendering APIs", "Natural Language API", "Networking", "Optimization AI", "Oracle on Bare Metal Servers", "Persistent Disk (PD)", "Pub/Sub", "Retail Recommendations AI", "Retail Search", "Secret Manager", "Security Analytics & Operations", "Security Command Center (SCC)", "Service Infrastructure", "Smart Factory Platform: Manufacturing", "Speech-to-Text API", "Storage Transfer Service", "TensorFlow Enterprise", "Transcode API", "Translation API", "VMware Engine", "Virtual Private Cloud (VPC)", "VPC Service Controls", "Vertex AI", "Vertex AI Agent Builder", "Video Intelligence API", "Vision API", "Visual Inspection AI", "Web Risk", "Web3", "reCAPTCHA Enterprise and Web Risk"],
                 # index=None,
                 placeholder="select",
             )
@@ -122,13 +128,14 @@ def home_page():
         with aud:
             st.session_state.audience = st.multiselect(
                 "*Audience*",
-                options=["CDO", "CEO", "CFO", "CIO", "CMO", "CTO", "ITDM", "Line of Business", "Others"],
+                options=["CDO", "CEO", "CFO", "CIO", "CMO",
+                         "CTO", "ITDM", "Line of Business", "Others"],
                 # index=None,
                 placeholder="select",
             )
-        _, __,___ = st.columns(3)
+        _, __, ___ = st.columns(3)
         with ___:
-            if st.button('**Generate Outline**', use_container_width= True):
+            if st.button('**Generate Outline**', use_container_width=True):
                 _, __, ___, = st.columns([0.45, 0.5, 0.1])
                 if st.session_state.context == '':
                     st.error("Please enter context!",)
@@ -167,7 +174,6 @@ def main():
         </style>
         """, unsafe_allow_html=True)
 
-
     st.session_state.context = ''
     st.session_state.industry = ''
     st.session_state.solution = ''
@@ -179,9 +185,9 @@ def main():
     st.session_state.deck_url = ''
     st.session_state.outlines = []
     st.session_state.model_respose = {}
-    
-    
+
     home_page()
+
 
 if __name__ == '__main__':
     main()
