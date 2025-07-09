@@ -1,5 +1,33 @@
 [
     {
+        "context": "In the highly competitive and capital-intensive luxury real estate market, DAMAC faces challenges in optimizing project lifecycles, proactively managing assets post-delivery, and sustaining customer engagement beyond the initial sale. Manual processes, reactive maintenance, and a fragmented view of customer behavior lead to inefficiencies and missed opportunities for long-term value creation. Azure Solution Focus: Leveraging Azure IoT, Azure Digital Twins, and Azure AI/Machine Learning to create intelligent properties and predictive customer engagement models.",
+        "industry": "Real Estate",
+        "solution": "Data Analytics",
+        "customer_name": "DAMAC",
+        "outlines": [
+            "Challenges in Luxury Real Estate",
+            "Manual processes lead to inefficiencies",
+            "Reactive maintenance increases costs and impacts customer satisfaction",
+            "Fragmented customer data hinders personalized engagement",
+            "Data-driven insights for efficient project planning and execution",
+            "Predictive analytics for cost control and risk mitigation",
+            "Real-time collaboration and communication across project teams",
+            "IoT-enabled predictive maintenance for reduced downtime and costs",
+            "Smart building solutions for optimized energy efficiency and operational costs",
+            "Real-time asset tracking and management for improved decision-making",
+            "AI-powered customer insights for personalized experiences",
+            "Targeted marketing campaigns based on customer behavior and preferences",
+            "Building a long-term relationship through proactive communication and engagement",
+            "AI and Machine Learning Capabilities",
+            "Pre-trained APIs for vision, language, and other AI functionalities",
+            "Enhanced efficiency and cost savings",
+            "Improved customer satisfaction and loyalty",
+            "Data-driven decision-making and innovation",
+            "Next Steps and Call to Action"
+        ],
+        "deck_url":"https://docs.google.com/presentation/d/e/2PACX-1vSyq_21yzcmGmrW2iDM_OUkbrR1dSe3-3C1ajZozBQmtXL_0uUhgUHuXNCmHyuVuWzNjki7GqAHB7dH/pubembed?start=false&loop=false&delayms=3000"
+    },
+    {
         "context": "Create a deck for VMO2, the UK's largest and most reliable mobile network. The deck should highlight how Data Science can help address key challenges like Customer Churn and network congestion, while unlocking opportunities in personalized offers and proactive service management in a dynamic market.",
         "industry": "Telecommunication",
         "solution": "Data Analytics",

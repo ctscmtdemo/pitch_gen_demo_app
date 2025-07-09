@@ -27,7 +27,7 @@ generation_config = {
 }
 
 model = genai.GenerativeModel(
-    model_name="gemini-1.5-flash",
+    model_name="gemini-2.5-flash",
     generation_config=generation_config,
 )
 prompt = """
@@ -37,9 +37,9 @@ If any company or any organization name is mentioned and Industry is not mention
 ```context
 {context}
 ```
-industry = ["Telecommunication","Software & Internet","Financial Services","Retail","Technology", "Financial Software Company", "Media & Entertainment", ""]
+industry = ["Real Estate", "Telecommunication","Software & Internet","Financial Services","Retail","Technology", "Financial Software Company", "Media & Entertainment", ""]
 solution = ["Artificial Intelligence", "Data Analytics", ""]
-company_name = ["VMO2", "Cognizant Technology Solution","Citizen Bank", "Intuit", "Seven Eleven Taiwan", "TD Bank", "HDFC", "OLX", "Warner Bros", ""]
+company_name = ["DAMAC", "VMO2", "Cognizant Technology Solution","Citizen Bank", "Intuit", "Seven Eleven Taiwan", "TD Bank", "HDFC", "OLX", "Warner Bros", ""]
 """
 
 
