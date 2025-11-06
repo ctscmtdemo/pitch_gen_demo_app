@@ -39,7 +39,7 @@ If any company or any organization name is mentioned and Industry is not mention
 ```
 industry = ["Real Estate", "Telecommunication","Software & Internet","Financial Services","Retail","Technology", "Financial Software Company", "Media & Entertainment", ""]
 solution = ["Artificial Intelligence", "Data Analytics", ""]
-company_name = ["DAMAC", "VMO2", "Cognizant Technology Solution","Citizen Bank", "Intuit", "Seven Eleven Taiwan", "TD Bank", "HDFC", "OLX", "Warner Bros", ""]
+company_name = ["Microsoft", "DAMAC", "VMO2", "Cognizant Technology Solution","Citizen Bank", "Intuit", "Seven Eleven Taiwan", "TD Bank", "HDFC", "OLX", "Warner Bros", ""]
 """
 
 

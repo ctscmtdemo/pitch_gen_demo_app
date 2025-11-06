@@ -1,5 +1,28 @@
 [
     {
+        "context": "Create a deck on Microsoft, Technology company, involving in AI & GenAI journey significantly, looking for next generation AI infrastructure, GenAI and Agentic AI hyper-scale enablement partner.",
+        "industry": "Technology",
+        "solution": "Artificial Intelligence",
+        "customer_name": "Microsoft",
+        "outlines": [
+            "A Shared Vision: Pioneering the Next Era of Intelligence",
+            "Why Google Cloud as Your Strategic AI Enablement Partner",
+            "The Challenge: Meeting the Unprecedented Demands of Hyper-Scale AI",
+            "Next-Generation AI Infrastructure: Purpose-Built for Scale and Efficiency",
+            "The TPU Advantage: Unmatched Performance for Large Model Training and Inference",
+            "Google's Global Network: The Low-Latency Backbone for Distributed AI Systems",
+            "Hyper-Scale Generative AI Enablement",
+            "Vertex AI: A Unified Platform to Build, Deploy, and Manage Models at Scale",
+            "Unlocking Choice: Access Google's Gemini Family and a Diverse Open Model Ecosystem",
+            "The Next Frontier: A Framework for Building and Deploying Agentic AI",
+            "Powering Autonomous Systems with Advanced AI Tooling",
+            "Accelerate Game Content Creation and Live Operations with Generative AI",
+            "A Partnership for Co-Innovation: Beyond a Standard Vendor Relationship",
+            "Proposed Next Steps: Joint Architectural Design Session"
+        ],
+        "deck_url":"https://docs.google.com/presentation/d/e/2PACX-1vSp72mE2EfWF5-08fnxG5MpWia-DSktk2PkiAp2OH5fJ8FUGJWXDb6DeGCVVHAaHCzR9wJHiEJx8rRs/pubembed?start=false&loop=false&delayms=3000"
+    },
+    {
         "context": "In the highly competitive and capital-intensive luxury real estate market, DAMAC faces challenges in optimizing project lifecycles, proactively managing assets post-delivery, and sustaining customer engagement beyond the initial sale. Manual processes, reactive maintenance, and a fragmented view of customer behavior lead to inefficiencies and missed opportunities for long-term value creation. Azure Solution Focus: Leveraging Azure IoT, Azure Digital Twins, and Azure AI/Machine Learning to create intelligent properties and predictive customer engagement models.",
         "industry": "Real Estate",
         "solution": "Data Analytics",
